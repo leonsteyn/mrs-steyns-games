@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mrs Steyn's Games</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #1e293b;
+      letter-spacing: -0.02em;
+    }
+    header p {
+      color: #64748b;
+      margin-top: 0.35rem;
+      font-size: 1rem;
+    }
+
+    /* ── Grid ── */
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.18s, box-shadow 0.18s;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 36px rgba(0,0,0,0.13);
+    }
+
+    .card-banner {
+      height: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+    }
+
+    .card-body {
+      padding: 1.25rem 1.4rem 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #1e293b;
+    }
+    .card-desc {
+      font-size: 0.9rem;
+      color: #64748b;
+      line-height: 1.5;
+      flex: 1;
+    }
+    .card-tag {
+      display: inline-block;
+      margin-top: 0.75rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 99px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      align-self: flex-start;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      color: #94a3b8;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🎮 Mrs Steyn's Games</h1>
+    <p>A collection of fun educational games</p>
+  </header>
+
+  <main>
+    <div class="grid">
+
+      <!-- Spelling Bee -->
+      <a class="card" href="https://aussiespellingbee.netlify.app">
+        <div class="card-banner" style="background: linear-gradient(135deg, #fef9c3, #fde68a);">
+          🐝
+        </div>
+        <div class="card-body">
+          <div class="card-title">Spelling Bee</div>
+          <div class="card-desc">
+            Hear each word spoken aloud and spell it correctly before the timer runs out.
+            Three difficulty levels designed for Australian primary school students.
+          </div>
+          <span class="card-tag" style="background:#fef3c7; color:#92400e;">
+            🎓 Ages 5–13
+          </span>
+        </div>
+      </a>
+
+      <!-- Aussie Word Challenge -->
+      <a class="card" href="https://aussie-word-challenge.netlify.app">
+        <div class="card-banner" style="background: linear-gradient(135deg, #d1fae5, #6ee7b7);">
+          🦘
+        </div>
+        <div class="card-body">
+          <div class="card-title">Aussie Word Challenge</div>
+          <div class="card-desc">
+            Test your knowledge of uniquely Australian words, slang, and expressions in this fast-paced vocabulary quiz.
+          </div>
+          <span class="card-tag" style="background:#d1fae5; color:#065f46;">
+            🇦🇺 Australian English
+          </span>
+        </div>
+      </a>
+
+      <!-- Countries of the World -->
+      <a class="card" href="https://countriesoftheworldfacts.netlify.app">
+        <div class="card-banner" style="background: linear-gradient(135deg, #dbeafe, #93c5fd);">
+          🌍
+        </div>
+        <div class="card-body">
+          <div class="card-title">Countries of the World</div>
+          <div class="card-desc">
+            Explore 197 countries with flags, maps, capitals, populations, national animals, and fun facts for every nation on Earth.
+          </div>
+          <span class="card-tag" style="background:#dbeafe; color:#1e40af;">
+            🗺️ Years 5–6
+          </span>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <footer>
+    Made with ☀️ in Australia
+  </footer>
+
+</body>
+</html>
